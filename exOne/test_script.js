@@ -14,7 +14,7 @@ client.connect((err) => {
   if (err) {
     return console.error("Connection Error", err);
   }
-  client.query("SELECT * FROM famous_people", (err, result) => {
+  client.query("SELECT * FROM famous_people ", (err, result) => {
     if (err) {
       return console.error("error running query", err);
     }
